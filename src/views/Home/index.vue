@@ -112,7 +112,7 @@
       </address>
       <p>Contact the team and join the community</p>
       <div class="future">FUTURE</div>
-      <img class="footer-img" src="@/assets/images/g_8x2.png" alt="" />
+      <img class="footer-img" src="@/assets/images/footer.png" alt="" />
     </div>
   </div>
 </template>
@@ -144,10 +144,10 @@ export default {
 </script>
 <style lang="less" scoped>
 .home-container {
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
   .a-d-c {
-    width: 1600px;
+    // width: 1600px;
     height: 450px;
     display: flex;
     flex: 1;
@@ -204,12 +204,13 @@ export default {
     //两部分页面背景重叠处理
     z-index: 10;
     margin-top: 250px;
-    width: 1600px;
+    // padding-right: 100px;
+    width: 100%;
     height: 1225px;
     background: url("../../assets/images/g_3_1x2.png");
-    background-size: 1489px auto;
+    background-size: contain;
     background-repeat: no-repeat;
-    // background-position: center center;
+    background-position: center center;
     position: relative;
     .developer-title {
       font-size: 30px;
@@ -223,8 +224,8 @@ export default {
     }
     .developer-item-center {
       position: absolute;
-      top: 490px;
-      left: 680px;
+      top: 40%;
+      left: 45%;
       .developer-title {
         color: #253f97;
         font-size: 42px;
@@ -237,23 +238,23 @@ export default {
     }
     .developer-item-censorship {
       position: absolute;
-      top: 308px;
-      left: 206px;
+      top: 30%;
+      left: 13%;
     }
     .developer-item-customization {
       position: absolute;
-      top: 308px;
-      left: 1225px;
+      top: 30%;
+      left: 80%;
     }
     .developer-item-governance {
       position: absolute;
-      top: 940px;
-      left: 1225px;
+      top: 70%;
+      left: 80%;
     }
     .developer-item-free {
       position: absolute;
-      top: 940px;
-      left: 206px;
+      top: 70%;
+      left: 13%;
     }
   }
   .contact-container {
@@ -261,15 +262,13 @@ export default {
     box-sizing: border-box;
     z-index: 9;
     margin-top: -100px;
-    width: 1600px;
+    width: 100%;
     height: 1185px;
-    background: url("../../assets/images/g_2x2.png");
-    background-size: 1450px auto;
+    background: url("../../assets/images/g_2.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    // background-attachment: fixed;
-    background-position: 148px -25px;
-    text-align: center;
+    background-position: center;
+    text-align: center ;
     color: #444f8b;
     h1 {
       padding: 180px 0 60px 0;
@@ -287,13 +286,13 @@ export default {
       margin-top: 280px;
       font-size: 125px;
       font-weight: 550;
-      margin-left: 65px;
+      margin-left: 150px;
       letter-spacing: 90px;
       color: rgba(37, 63, 151, 0.5);
     }
     .footer-img {
       z-index: 8;
-      width: 1600px;
+      width: 100%;
       margin-top: -330px;
     }
   }

@@ -7,7 +7,6 @@
         class="inline-input"
         v-model="keyword"
         :fetch-suggestions="querySearch"
-        placeholder="请输入内容"
         :trigger-on-focus="false"
         @input="handleInput"
       >
@@ -94,7 +93,7 @@ export default {
 // @search_b_r: 40px;
 
 .search-container {
-  width: 1600px;
+  width: 100%;
   height: 835px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -110,7 +109,7 @@ export default {
     position: absolute;
     top: 0;
     z-index: -1;
-    width: 1600px;
+    width: 100%;
     display: block;
     margin: 0 auto;
     /* background-size: cover */
